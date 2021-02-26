@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #parent, #other, #grand{
+        border:5px solid tomato;
+      }
+      #grand{
+        position: relative;
+      }
+      #me{
+        background-color: black;
+        color:white; /*컬러는 화이트로 해야 보이겠지!!*/
+        position: absolute;
+        left: 0;
+        top: 0;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">삼촌</div>
+    <div id="grand">할아바머니
+      <div id="parent">
+        부모님
+        <div id="me">나</div>
+      </div>
+    </div>
+
+  </body>
+</html>
