@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&display=swap" rel="stylesheet">
     <style>
-      p{
-        border:2px solid gray;
-        text-align: justify;
+      body{
+        padding-bottom:30px;
       }
-      #p1{
-        font-family: 'DotGothic16', sans-serif;
+
+      #large{
+        height: 10000px;
+        background-color: tomato;
       }
-      #p2{
-        font-family: 'Akaya Telivigala', cursive;
+      #parent, #other{
+        border:5px solid tomato;
+      }
+      #me{
+        background-color: black;
+        color:white;
+        position:fixed;
+        right:0;
+        bottom:0;
+        width:100%;
+        text-align: center;
+        height: 30px;
       }
     </style>
   </head>
   <body>
-    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="other">other</div>
+    <div id="parent">
+      parent
+      <div id="me">me</div>
+    <div id="large">large</div>
+    </div>
   </body>
 </html>
