@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border:1px solid gray;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+        }
+        nav{
+            order:0;
+        }
+        main{
+            order: 1;
+        }
+        aside{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Ut venenatis tellus in metus vulputate eu
+                scelerisque.
+                Aliquet nec ullamcorper sit amet risus nullam eget. Arcu cursus vitae congue mauris. Eget mi proin sed libero enim
+                sed.
+                Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Porttitor rhoncus dolor purus
+                non.
+                Vitae justo eget magna fermentum. Viverra nam libero justo laoreet sit amet cursus. Nunc sed velit dignissim sodales
+                ut
+                eu. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Libero volutpat sed cras ornare arcu. Enim diam
+                vulputate ut pharetra. Sed felis eget velit aliquet sagittis id consectetur purus ut. Amet est placerat in egestas
+                erat
+                imperdiet. In fermentum et sollicitudin ac orci phasellus egestas tellus. Viverra maecenas accumsan lacus vel. Ut
+                sem
+                viverra aliquet eget sit amet tellus cras adipiscing.
+            </main>
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
