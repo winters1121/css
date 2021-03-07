@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <style>
-      body{
-        padding-bottom:30px;
-      }
-
-      #large{
-        height: 10000px;
-        background-color: tomato;
-      }
-      #parent, #other{
-        border:5px solid tomato;
-      }
-      #me{
-        background-color: black;
-        color:white;
-        position:fixed;
-        right:0;
-        bottom:0;
-        width:100%;
-        text-align: center;
-        height: 30px;
-      }
+        html{
+            font-weight: bold;
+        }
+        #select{
+            text-decoration: underline;
+            border:1px solid gray;
+            text-align: center;
+            background-color: darkolivegreen;
+            color:indigo;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li{
+            color: deeppink;
+        }
+        #selector{
+            color: darksalmon;
+        }
+        .block{
+            color: darkslateblue;
+        }
+        a:hover{
+            color:green;
+        }
+        a:active{
+            color:indigo;
+        }
+        a:focus{
+            color:darkorange;
+        }
     </style>
-  </head>
-  <body>
-    <div id="other">other</div>
-    <div id="parent">
-      parent
-      <div id="me">me</div>
-    <div id="large">large</div>
-    </div>
-  </body>
+</head>
+<body>
+    <h1>홈페이지</h1>
+    <ul>
+        <li>1</li>
+        <li id=selector class="block" style="color: darkred;">2</li>
+        <li id="select">33</li>
+    </ul>
+
+    <p style="font-size: 30px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, soluta in minus neque odit ratione voluptatem voluptate blanditiis alias quod! Vero culpa placeat aliquid esse sed vel, ea quae!
+    </p>
+    <p style="font-size: 5rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat distinctio sunt rerum tempore, architecto facere doloremque illo harum eos repellat doloribus dolores repellendus accusamus laboriosam cupiditate molestiae, quas quisquam libero!
+    </p>
+  
+    <a href="a.com">html</a>
+</body>
 </html>
