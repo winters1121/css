@@ -1,2 +1,3 @@
-# _CSS
-Config files for my GitHub profile.
+# egoing_nicolas study
+
+studying
