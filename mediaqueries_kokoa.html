@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Wookie Times</title>
+    <title>Document</title>
     <style>
       body {
         display: flex;
@@ -17,9 +18,9 @@
         width: 200px;
         height: 200px;
       }
-      @media screen (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
+      @media (min-width: 601px) and (max-width: 1200px) {
         div {
-          background-color: wheat;
+          background-color: violet;
         }
       }
       span {
@@ -30,10 +31,15 @@
           display: none;
         }
       }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
     </style>
   </head>
   <body>
     <div></div>
-    <span>please flip your phone :> </span>
+    <span>please flip your phone</span>
   </body>
 </html>
